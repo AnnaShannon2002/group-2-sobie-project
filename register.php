@@ -29,13 +29,16 @@
             </div>
           </div>
  -->
-
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
   <body>
-    <form method='POST' actoin='register.php'>
+    <form method='POST' action='doregister.php'>
     <label for="name">Name:</label>
     <input type="text" id="fname" name="fname"><br><br>
     <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit"/>
   </body>
 </html>
