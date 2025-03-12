@@ -35,7 +35,7 @@ session_start();
 <!DOCTYPE html>
 <html>
   <body>
-    <form method='POST' action='doregister.php'>
+    <form method='POST' action='do_register.php'>
     <label for="name">Name:</label>
     <input type="text" id="fname" name="fname"><br><br>
     <input type="text" id="lname" name="lname"><br><br>
