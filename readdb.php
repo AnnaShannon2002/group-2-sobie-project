@@ -4,7 +4,7 @@ session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "sobiedb";
+$dbname = "sublist";
 
 $con = mysqli_connect($servername, $username, $password, $dbname);
 if (!$con) {
@@ -24,7 +24,7 @@ $result = mysqli_query($con, "SELECT * FROM student");
         echo "<h1>Results:</h1><hr><br>";
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-                echo "ID: " . $row["id"] . " | First Name: " . $row["fname"] . " | Last Name: " . $row["lname"] . " | Email: " . $row["email"] . "<br><br>";
+                echo "ID: " . $row["id"] . " | First Name: " . $row["firstName"] . " | Last Name: " . $row["lastName"] . " | Email: " . $row["email"] . "<br><br>";
             }
         } else {
             echo "No items found";
