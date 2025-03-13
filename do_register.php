@@ -12,11 +12,11 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$fname = test_input($_POST['fname']);
-$lname = test_input($_POST['lname']);
+$firstName = test_input($_POST['firstName']);
+$lastName = test_input($_POST['lastName']);
 $email = test_input($_POST['email']);
 
-$sql = "INSERT INTO students (fname, lname, email) VALUES ('$fname', '$lname', '$email')";
+$sql = "INSERT INTO students (firstName, lastName, email) VALUES ('$firstName', '$lastName', '$email')";
 
 if ($conn->query($sql) === TRUE) {
     header("location: index.php");
