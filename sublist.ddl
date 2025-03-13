@@ -1,4 +1,4 @@
-/* Made By Noah Brown */
+/* Made By Noah Brown and Anna Shannon */
 
 create database sublist; 
 
